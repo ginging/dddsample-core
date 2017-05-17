@@ -180,6 +180,16 @@
           <groupId>org.thymeleaf</groupId>
           <artifactId>thymeleaf-spring4</artifactId>
           <version>2.1.4.RELEASE</version>
+          <exclusions>
+          	<exclusion>
+          		<groupId>org.javassist</groupId>
+            	<artifactId>javassist</artifactId>
+          	</exclusion>
+          	<exclusion>
+          		<groupId>org.slf4j</groupId>
+          		<artifactId>slf4j-api</artifactId>
+          	</exclusion>
+          </exclusions>
       </dependency>
       <dependency>
       <groupId>org.hibernate</groupId>
@@ -251,7 +261,7 @@
       <exclusions>
         <exclusion>
           <groupId>commons-logging</groupId>
-          <artifactId>commons-logging-api</artifactId>
+          <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
